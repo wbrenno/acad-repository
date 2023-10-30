@@ -8,18 +8,15 @@ import java.util.ArrayList;
 
 public class NotaTrabalhoFakeDB extends BaseGenericaFakeDB<NotaTrabalho>{
 
-    private AlunoFakeDB alunoDB;
-    private TrabalhoFakeDB trabalhoDB;
-    protected NotaTrabalho trabalhosDB;
-
      @Override
     protected void CarregarDados(){
+
+     AlunoFakeDB alunoDB = new AlunoFakeDB();
+     TrabalhoFakeDB trabalhoDB = new TrabalhoFakeDB();
 
          ArrayList<Aluno> alunos = alunoDB.getTabela();
 
          ArrayList<Trabalho> trabalhos = trabalhoDB.getTabela();
-        
-
         
         this.tabela = new ArrayList<NotaTrabalho>();
 
