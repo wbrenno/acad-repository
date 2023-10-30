@@ -7,14 +7,10 @@ import uniderp.poo.escola.Dominio.Trabalho;
 
 public class TrabalhoFakeDB extends BaseGenericaFakeDB<Trabalho> {
 
-    private DisciplinaFakeDB disciplinaDB;
-
-    public TrabalhoFakeDB(DisciplinaFakeDB disciplinaDB) {
-        this.disciplinaDB = disciplinaDB;
-    }
-
      @Override
     protected void CarregarDados() {
+        
+         DisciplinaFakeDB disciplinaDB = new DisciplinaFakeDB();
 
         ArrayList<Disciplina> disciplinas = disciplinaDB.getTabela();
 
@@ -30,6 +26,9 @@ public class TrabalhoFakeDB extends BaseGenericaFakeDB<Trabalho> {
         tabela.add(trabHist);
         tabela.add(trabGeo);
     
+    }
+    public TrabalhoFakeDB(){
+        super();
     }
 }
 
