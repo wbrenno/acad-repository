@@ -57,4 +57,9 @@ public class RendimentoEscolar {
         this.mediaTrab = mediaTrab;
         this.mediaGeral = mediaGeral;
     }
+    public void setCodigo(int proxCodigo) {
+    }
+    public int getCodigo() {
+        return 0;
+    }
 }
