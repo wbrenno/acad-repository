@@ -12,10 +12,10 @@ public class RendimentoEscolarFakeDB extends BaseGenericaFakeDB<RendimentoEscola
     @Override
     protected void CarregarDados() {
 
-    private AlunoFakeDB alunoDB = new AlunoFakeDB();
-    private NotaTrabalhoFakeDB trabsDB = new NotaTrabalhoFakeDB();
-    private TurmaFakeDB turmaDB = new TurmaFakeDB();
-
+     AlunoFakeDB alunoDB = new AlunoFakeDB();
+     NotaTrabalhoFakeDB trabsDB = new NotaTrabalhoFakeDB();
+     TurmaFakeDB turmaDB = new TurmaFakeDB(); 
+        
         ArrayList<Aluno> alunos = alunoDB.getTabela();
 
         ArrayList<Turma> turmas = turmaDB.getTabela();
