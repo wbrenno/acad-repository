@@ -8,18 +8,11 @@ import uniderp.poo.escola.Dominio.Turma;
 
 public class TurmaFakeDB extends BaseGenericaFakeDB<Turma>{
 
-    private DisciplinaFakeDB disciplinaDB;
-    private ProfessorFakeDB professorDB;
-
-    public TurmaFakeDB(DisciplinaFakeDB disciplinaDB) {
-        this.disciplinaDB = disciplinaDB;
-    }
-     public TurmaFakeDB(ProfessorFakeDB professorDB) {
-        this.professorDB = professorDB;
-    }
-
      @Override
     protected void CarregarDados() {
+
+         DisciplinaFakeDB disciplinaDB = new DisciplinaFakeDB();
+         ProfessorFakeDB professorDB = new ProfessorFakeDB();
 
          ArrayList<Disciplina> disciplinas = disciplinaDB.getTabela();
 
