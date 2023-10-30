@@ -9,24 +9,12 @@ import uniderp.poo.escola.Dominio.Turma;
 
 public class RendimentoEscolarFakeDB extends BaseGenericaFakeDB<RendimentoEscolar>{
 
-    private AlunoFakeDB alunoDB;
-    private NotaTrabalhoFakeDB trabsDB;
-    private TurmaFakeDB turmaDB;
-
-    public RendimentoEscolarFakeDB(AlunoFakeDB alunoDB) {
-        this.alunoDB = alunoDB;
-    }
-
-    public RendimentoEscolarFakeDB(TurmaFakeDB turmaDB) {
-        this.turmaDB = turmaDB;
-    }
-    
-        public RendimentoEscolarFakeDB(NotaTrabalhoFakeDB trabsDB) {
-        this.trabsDB = trabsDB;
-    }
-
     @Override
     protected void CarregarDados() {
+
+    private AlunoFakeDB alunoDB = new AlunoFakeDB();
+    private NotaTrabalhoFakeDB trabsDB = new NotaTrabalhoFakeDB();
+    private TurmaFakeDB turmaDB = new TurmaFakeDB();
 
         ArrayList<Aluno> alunos = alunoDB.getTabela();
 
