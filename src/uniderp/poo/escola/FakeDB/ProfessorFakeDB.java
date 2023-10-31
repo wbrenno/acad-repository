@@ -10,10 +10,10 @@ public class ProfessorFakeDB extends BaseGenericaFakeDB<Professor>{
     protected void CarregarDados() {
         this.tabela = new ArrayList<Professor>();
 
-        Professor luiz = new Professor(6, "Luizao", LocalDate.of(1993, 9, 9) , "Luizao", "08080808", "Professor");
-        Professor noiza = new Professor(7, "Noiza", LocalDate.of(1992, 8, 8) , "Noizao", "07070707", "Professor");
-        Professor oswaldo = new Professor(8, "Oswaldo", LocalDate.of(1991, 7, 7) , "Oswaldao", "06060606", "Professor");
-        Professor paulo = new Professor(9, "Paulo", LocalDate.of(1990, 6, 6), "Paulao", "05050505", "Professor");
+        Professor luiz = new Professor(1, "Luizao", LocalDate.of(1993, 9, 9) , "Luizao", "08080808", "Professor");
+        Professor noiza = new Professor(2, "Noiza", LocalDate.of(1992, 8, 8) , "Noizao", "07070707", "Professor");
+        Professor oswaldo = new Professor(3, "Oswaldo", LocalDate.of(1991, 7, 7) , "Oswaldao", "06060606", "Professor");
+        Professor paulo = new Professor(4, "Paulo", LocalDate.of(1990, 6, 6), "Paulao", "05050505", "Professor");
 
         tabela.add(luiz);
         tabela.add(noiza);
