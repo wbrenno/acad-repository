@@ -245,7 +245,7 @@ public class NotaTrabalhoFakeDB extends BaseGenericaFakeDB<NotaTrabalho>{
          this.tabela.add(new NotaTrabalho(2, alunos.get(9), trabalhos.get(2), 8.0));
          this.tabela.add(new NotaTrabalho(2, alunos.get(9), trabalhos.get(2), 8.0));
 
-        this.tabela.add(new NotaTrabalho(3 alunos.get(9), trabalhos.get(3), 9.0));
+        this.tabela.add(new NotaTrabalho(3, alunos.get(9), trabalhos.get(3), 9.0));
         this.tabela.add(new NotaTrabalho(3, alunos.get(9), trabalhos.get(3), 9.0));
          this.tabela.add(new NotaTrabalho(3, alunos.get(9), trabalhos.get(3), 9.0));
          this.tabela.add(new NotaTrabalho(3, alunos.get(9), trabalhos.get(3), 9.0));
